@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    
+    <script> window.jQuery = window.$ = require('jquery'); </script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/connect_selector.css" rel="stylesheet">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./js/connect_selector.js"></script>
+    <script src="./js/renderer-com.js"></script>
+</head>
+<body>
+    <form class="form-horizontal box" role="form">
+        <input type="hidden" id="select-idx"value ="<%= conf.select_idx %>"> 
+        <select class="form-control">
+            <% 
+            let select_server;
+            for(let i = 0; i < conf.server_list.length ; i++) { 
+                const obj = conf.server_list[i];
+                if(i != conf.select_idx) {
+                    %> <option idx = "<%= i %>"><%= obj.name %></option> <%
+                } else {
+                    select_server = obj;
+                    %> <option idx = "<%= i %>" selected><%= obj.name %></option> <%
+                }
+            }
+            %>
+
+        </select>
+        <div class="form-group">
+            <label for="login-id" class="col-xs-2 control-label">LoginID</label>
+            <div class="col-xs-10">
+                <input type="text" id="login-id" class="form-control" value ="<%= conf.login_id %>"> 
+            </div>
+        </div>
+        <div class="form-group form-inline">
+            <label class="col-xs-2 control-label">Version</label>
+            <div class="col-xs-10">
+                <input type="text" id="version"class="form-control" value ="<%= conf.version %>"> 
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-xs-2 control-label">URL</label>
+            <div class="col-xs-10">
+                <input type="text" class="form-control" value ="<%= select_server.url %>" disabled> 
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-xs-2 control-label">PORT</label>
+            <div class="col-xs-6">
+                <input type="text" class="form-control" value ="<%= select_server.port %>" disabled> 
+            </div>
+            <div class="col-xs-4">
+                <label><input type="checkbox" id="reg-id">계정 생성</label>
+            </div>
+            
+        </div>
+    </form>
+    <center>
+        <button type="button" class="btn btn-success btn-sm">접속정보 선택</button>
+    </center>
+    
+</body>
+</html>

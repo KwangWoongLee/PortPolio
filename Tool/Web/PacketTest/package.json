@@ -1,0 +1,97 @@
+{
+  "name": "game_packet_test",
+  "version": "1.0.0",
+  "description": "game server packet test application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:x64": "electron-builder build --win --x64",
+    "build:win32": "electron-builder build --win --ia32",
+    "build:osx": "electron-builder build --mac",
+    "build:linux32": "electron-builder build --linux --ia32",
+    "build:linux64": "electron-builder build --linux --x64"
+  },
+  "repository": "",
+  "keywords": [],
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "10.1.5",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "crypto": "^1.0.1",
+    "dateformat": "^3.0.3",
+    "ejs-electron": "^2.1.1",
+    "electron-updater": "^4.3.5",
+    "jquery": "^3.5.1"
+  },
+  "build": {
+    "appId": "com.greemeta.game",
+    "files": [
+      "./**.js",
+      "./src/**.js",
+      "./public/**.*",
+      "./public/css/**.*",
+      "./public/fonts/**.*",
+      "./public/js/**.*",
+      "./public/res/**.*"
+    ],
+    "win": {
+      "target": [
+        "zip",
+        "nsis"
+      ],
+      "publish": [
+        {
+          "provider": "generic",
+          "url": "http://dev.nusgames.com:10200/packet_test/"
+        }
+      ],
+      "icon": "./public/res/icon.png",
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "language": 1042,
+      "shortcutName": "game_packet_test"
+    },
+    "mac": {
+      "target": [
+        "default"
+      ],
+      "icon": "./resources/installer/Icon.icns"
+    },
+    "dmg": {
+      "title": "game_packet_test",
+      "icon": "./resources/installer/Icon.icns"
+    },
+    "linux": {
+      "target": [
+        "zip",
+        "tar.gz"
+      ],
+      "icon": "./resources/linuxicon"
+    },
+    "directories": {
+      "output": "./dist"
+    },
+    "extraResources": [
+      {
+        "from": "./code.txt",
+        "to": "../code.txt"
+      },
+      {
+        "from": "./config.json",
+        "to": "../config.json"
+      },
+      {
+        "from": "protocol",
+        "to": "../protocol"
+      }
+    ],
+    "asar": true
+  }
+}

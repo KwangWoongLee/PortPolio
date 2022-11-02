@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script> window.jQuery = window.$ = require('jquery'); </script>
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/json_edit.css" rel="stylesheet">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./js/json_edit.js"></script>
+    <title><%- title %></title>
+</head>
+<body>
+    <textarea class="json-edit"  wrap="off">
+<%- value %>
+    </textarea>
+    <center>
+        <button type="button" class="btn btn-success btn-xs">파일수정</button>
+    </center>
+    
+</body>
+</html>

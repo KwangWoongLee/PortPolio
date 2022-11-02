@@ -1,0 +1,21 @@
+body {
+    background-color:#EAEAEA;
+}
+
+.msg-box { 
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 80px;
+    padding: 10px;
+    box-shadow: 0 0 5px #ccc;
+    overflow: auto;
+}
+
+button {
+    text-align:center;
+    width: 25%;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    padding: 10px;
+}
