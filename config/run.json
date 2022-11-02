@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "morr_game",
+      "script": "game.js",
+      "cwd": "./"
+    }
+  ]
+}
