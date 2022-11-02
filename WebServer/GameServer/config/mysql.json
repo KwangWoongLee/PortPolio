@@ -1,0 +1,29 @@
+{
+  "com": {
+    "waitForConnections": false,
+    "connectionLimit": 80,
+    "user": "morr",
+    "password": "Morr001!@#",
+    "host": "49.50.161.193",
+    "port": 3306,
+    "database": "morr_com"
+  },
+  "log": {
+    "waitForConnections": false,
+    "connectionLimit": 80,
+    "user": "morr",
+    "password": "Morr001!@#",
+    "host": "49.50.161.193",
+    "port": 3306,
+    "database": "morr_log"
+  },
+  "user": {
+    "waitForConnections": false,
+    "connectionLimit": 80,
+    "user": "morr",
+    "password": "Morr001!@#",
+    "host": "49.50.161.193",
+    "port": 3306,
+    "database": "morr_user"
+  }
+}
