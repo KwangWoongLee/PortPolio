@@ -1,1 +1,0 @@
-(this.webpackJsonpgame_protocol=this.webpackJsonpgame_protocol||[]).push([[6],{54:function(t,e,o){"use strict";o.r(e),e.default=o.p+"static/media/agreement.5e839886.txt"}}]);
