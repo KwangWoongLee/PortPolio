@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    
+    <script> window.jQuery = window.$ = require('jquery'); </script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/renderer-com.js"></script>
+    
+    <title><%= title %></title>
+</head>
+<body>
+    <div class="col-xs-4">
+        <div class="text-primary"> 모든 패킷 <button type="button" class="close connect-open" aria-hidden="true"><span class="glyphicon glyphicon-align-justify"></button></div>
+        <input type="text" id="filter" placeholder="필터할 패킷">
+        <div class="box packet-dir"></div>
+        <br>
+        <button id="send-btn" class="btn btn-info btn-sm">SEND</button>
+        <button id="send-infinity-btn" class="btn btn-info btn-sm">SEND-INFINITY</button>
+    </div>
+    <div class="col-xs-8">
+        <div class="col-xs-6">
+            <div class="text-primary"> 보낼 패킷 </div>
+            <div class="box send-packet" wrap="off"></div>
+            <input type="text" id="session-txt"  disabled placeholder="session"><br>
+            <input type="text" id="aidx-txt" disabled placeholder="useridx">
+            <button class="btn btn-info btn-xs" id="start-packet-btn">시작 패킷</button>
+            <button class="btn btn-info btn-xs" id="clear-packet-btn">전부 지우기</button>
+        </div>
+        <div class="col-xs-6">
+            <div class="text-primary" id="packet-edit-label"> packet name right click </div>
+            <textarea class="packet-edit"  wrap="off" readonly></textarea>
+            <button class="btn btn-info btn-xs" id='proto-edit-btn'>수정</button>
+        </div>
+        <div class="text-primary"> 메세지 <button type="button" class="close msg-clear" aria-hidden="true">x</button></div>
+        <textarea class="message-console"  wrap="off" readonly></textarea>
+    </div>
+</body>
+</html>

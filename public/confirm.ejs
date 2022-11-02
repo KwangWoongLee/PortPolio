@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script> window.jQuery = window.$ = require('jquery'); </script>
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/confirm.css" rel="stylesheet">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./js/confirm.js"></script>
+</head>
+<body>
+    <div class="message box">
+        <%- msg %>
+    </div>
+    <center>
+        <button type="button" class="btn btn-success btn-xs">확인</button>
+        &nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-warning btn-xs">취소</button>    
+    </center>
+    
+</body>
+</html>

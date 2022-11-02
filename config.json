@@ -1,0 +1,25 @@
+{
+  "app_version": "1.0.0",
+  "version": "1.0.0",
+  "login_id": "Woongda",
+  "select_idx": 0,
+  "register_packet": "reg_id",
+  "server_list": [
+    {
+      "name": "local-game",
+      "url": "127.0.0.1",
+      "port": 8080,
+      "init": [
+        "login"
+      ]
+    },
+    {
+      "name": "morr-dev-game",
+      "url": "49.50.161.193",
+      "port": 8080,
+      "init": [
+        "login"
+      ]
+    }
+  ]
+}
