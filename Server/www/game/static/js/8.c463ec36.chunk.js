@@ -1,1 +1,0 @@
-(this.webpackJsonpgame_protocol=this.webpackJsonpgame_protocol||[]).push([[8],{56:function(t,e,o){"use strict";o.r(e),e.default=o.p+"static/media/get_exp.1c229652.txt"}}]);
