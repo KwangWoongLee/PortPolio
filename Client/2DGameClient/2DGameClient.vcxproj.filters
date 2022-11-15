@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Component">
+      <UniqueIdentifier>{296287e3-9d2d-4b1a-beaa-2365b94ad3be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor">
+      <UniqueIdentifier>{97428659-af3c-4719-ae4e-23add722fcb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{187f4bd1-6d59-4e07-91c4-d5289d143711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{89c61ecb-957c-40a9-b372-3e66a8b25ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{8a79f532-21fc-4d2a-af88-2ccde917cfb1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Component.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Actor.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Game.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\SpriteComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Player.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MoveComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\InputComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Input.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\AnimationComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Bomb.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CollisionComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\TileMapComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Block.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Tile.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Boom.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\NetworkManager.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Src\Packet.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\PacketAnalyzer.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Stream.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkManagerClient.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\Component.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Actor.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Game.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Vector2.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\SpriteComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Player.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\MoveComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\InputComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Input.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\AnimationComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Bomb.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\CollisionComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\TileMapComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Block.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Tile.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Boom.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Singleton.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\NetworkManager.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Inc\Packet.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\PacketAnalyzer.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\PacketFactory.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\PacketType.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Stream.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkManagerClient.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
